@@ -11,7 +11,7 @@ public with sharing class CustomSettingController{
     @Testvisible
     private static String typeOfCs = '';			//Type of custom setting
     private static Map<Id,User> userMap;			//User Map to Hold User objects
-    private static Map<Id,Profile> profileMap;		//Profile Map to Hold profile objects
+    private static Map<Id,Profile> profileMap;		//Profile Map to Hold profile objects 
     
     /**
     * @description  Function to populate the picklist values dynamically with custom setting names as options
@@ -24,6 +24,7 @@ public with sharing class CustomSettingController{
         List<Schema.SObjectType> globaldescribeList = Schema.getGlobalDescribe().Values();     
         List<SelectOption> optionsList = new List<SelectOption>();
         List<String> optionsStringList = new List<String>();
+List<String> optionsStringList = new List<String>();
         
         for(Schema.SObjectType gdObj : globaldescribeList){
             Boolean iscustomSetting = gdObj.getDescribe().isCustomSetting();
