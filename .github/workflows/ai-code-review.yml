@@ -1,3 +1,5 @@
 - name: AI Code Review
-uses: AleksandrFurmenkovOfficial/ai-code-review@v0.4.1
-            
+  uses: AleksandrFurmenkovOfficial/ai-code-review@v0.4.1
+
+- name: Install dependencies
+  run: npm ci
