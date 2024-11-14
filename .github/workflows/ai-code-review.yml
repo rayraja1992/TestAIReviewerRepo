@@ -21,4 +21,5 @@ jobs:
         include_extensions: ${{ steps.inputs.include_extensions }} # Optional, specify file types to include e.g., ".py,.js,.html"
         exclude_extensions: ${{ steps.inputs.exclude_extensions }} # Optional, specify file types to exclude
         include_paths: ${{ steps.inputs.include_paths }} # Optional, specify directories to include
+        exclude_paths: ${{ steps.inputs.exclude_paths }} # Optional, specify directories to exclude
 
